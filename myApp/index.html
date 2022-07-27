@@ -9,23 +9,30 @@
     <title>Check Best Student</title>
 </head>
 <body>
-    <div class="container">
+    <div class="jumbotron mt-5">
+        
         <div class="row">
-            <div class="col-8 offset-4" id="div">
 
-                <p id="error" class="text-center"></p>
-                
-                    <label for="subject">
-                        <input id="inputSub" placeholder="input subject">
-                    </label>
+            <div class="col-12 d-flex justify-content-center">
+                <div class="row ">
 
-                    <button onclick="checkBestStudent()" class="text-info">Check Best Student</button>
-                
+                    <div class="col-6">
+                        <label for="subject">
+                            <input id="inputSub" placeholder="input subject">
+                        </label>
+                    </div>
 
-                <p id="bestStudent" class="d-none"> The best student in <span id="subjectName"></span> is:<span id="nameOfStudent"></span> </p>
+                    <div class="col-6">
+                        <button onclick="checkBestStudent()" class="text-info">Check Best Student</button>
+                    </div>
+
+                </div>
             </div>
-        </div>
-    </div>
+    
+
+        </div><!--jumbotron row end-->
+        <p id="msg" class="text-center"> </p>
+    </div><!--Jumbotron end-->
     
 
 

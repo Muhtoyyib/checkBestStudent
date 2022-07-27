@@ -12,13 +12,3 @@ button{
     font-weight: bold;
 }
 
-#div{
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-}
-
-#error{
-    margin-left: -55%;
-    font-weight: bold;
-}

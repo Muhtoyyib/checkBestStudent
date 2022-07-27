@@ -15,14 +15,17 @@ function checkBestStudent(subject) {
     };
 
     bestStudent = lookup[subject];
-   /* if(subject !== lookup["maths"] || subject !== lookup["english"] || subject !== lookup["chemistry"] || subject !== lookup["physics"] || subject !== lookup["biology"] || subject !== lookup["yoruba"] || subject !== lookup["geography"] || subject !== lookup["statistics"] || subject == ""){
-        document.getElementById('error').innerHTML = "Sorry we don't offer this subject";
-        document.getElementById('error').classList.add('text-danger');
-    } else{
-        document.getElementById('bestStudent').innerHTML = bestStudent;
-    }
-*/
-    switch(subject) {
+  /* if(bestStudent === lookup["maths"]){
+    subject = document.getElementById('inputSub').value.toUpperCase();
+    document.getElementById('msg').innerHTML= `The best student in <span class="text-info">${subject}</span> is ${bestStudent}`;
+    document.getElementById('msg').classList.add('text-dark'); 
+    }else{
+        document.getElementById('msg').classList.remove('text-dark'); 
+        document.getElementById('msg').classList.add('text-danger');
+        document.getElementById('msg').innerHTML =`Sorry! We don't offer this subject`;
+    }*/
+
+   switch(subject) {
     case "maths":
     case "english":
     case "chemistry":
@@ -32,19 +35,21 @@ function checkBestStudent(subject) {
     case "statistics":
     case "geography":
     case "music":
-        document.getElementById('subjectName').innerHTML = subject.toUpperCase();
-        document.getElementById('subjectName').classList.add('text-warning')
-        document.getElementById('bestStudent').classList.remove('d-none');
-        document.getElementById('nameOfStudent').innerHTML += bestStudent;
-        document.getElementById('nameOfStudent').classList.add('text-success');
+     subject = document.getElementById('inputSub').value.toUpperCase();
+    document.getElementById('msg').innerHTML= `The best student in <span class="text-info">${subject}</span> is <span class="text-info">${bestStudent}</span>`;
+    document.getElementById('msg').classList.add('text-dark'); 
     break;
-    default:
-   document.getElementById('error').innerHTML ="Sorry! We don't offer this subject";
-   document.getElementById('error').classList.add('text-danger');
+   default:
+    document.getElementById('msg').classList.remove('text-dark'); 
+   document.getElementById('msg').classList.add('text-danger');
+   document.getElementById('msg').innerHTML =`Sorry! We don't offer this subject`;
 
-}   
+} 
+
     
   }
+
+
   
   
   
