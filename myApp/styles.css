@@ -6,9 +6,15 @@ p{
     color: aliceblue;
 }
 
+input{
+    margin-left: -6.5%;
+}
+
 button{
     border-radius: 5px;
     background-color: #000;
     font-weight: bold;
+    width: 110%;
+    margin-left: -3.5%;
 }
 
