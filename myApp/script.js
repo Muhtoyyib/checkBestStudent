@@ -35,8 +35,8 @@ function checkBestStudent(subject) {
     case "statistics":
     case "geography":
     case "music":
-     subject = document.getElementById('inputSub').value.toUpperCase();
-    document.getElementById('msg').innerHTML= `The best student in <span class="text-info">${subject}</span> is <span class="text-info">${bestStudent}</span>`;
+     subject = document.getElementById('inputSub').value;
+    document.getElementById('msg').innerHTML= `The best student in <span class="text-primary text-capitalize">${subject}</span> is <span class="text-success text-uppercase">${bestStudent}</span>`;
     document.getElementById('msg').classList.add('text-dark'); 
     break;
    default:
