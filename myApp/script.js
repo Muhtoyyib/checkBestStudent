@@ -37,7 +37,7 @@ function checkBestStudent(subject, year) {
               "score": 78
                        },
             "biology":{
-              "name": "Idiagbon Taiwo",
+              "name": "Isiaq Tijani Adekunle",
               "year": 2021,
               "totalScore": 267,
               "score": 78
