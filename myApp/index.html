@@ -10,29 +10,27 @@
 </head>
 <body>
     <div class="jumbotron mt-5">
-        <h1 class="text-center text-black-50 text-uppercase">Zenith Tutorial Center</h1>
-        
+        <h1 class="text-center text-black-50 text-uppercase">Zenith Tutorial Center</h1><br>
+
+        <div class="row">
+
+            <div class="col-12 form-check form-check-inline d-flex justify-content-center">
+                <label for="subject">
+                    <input type="text" class="form-check-input" id="inputSub" placeholder="input subject">
+                    <input type="number" min="1900" max="2099" step="1" value="2021" class="form-check-input" id="year">
+                </label>
+            </div>
+                
+        </div><!--form row end-->
+
         <div class="row">
 
             <div class="col-12 d-flex justify-content-center">
-                <div class="row ">
-
-                    <div class="col-10 form-check form-check-inline" style="margin-left: 30%;">
-                        <label for="subject">
-                            <input type="text" class="form-check-input" id="inputSub" placeholder="input subject">
-                            <input type="number" min="1900" max="2099" step="1" value="2021" class="form-check-input" id="year">
-                        </label>
-                    </div>
-
-                    <div class="col-4" style="margin-left: 35%;">
-                        <button onclick="checkBestStudent()" class="text-info">Check Best Student</button>
-                    </div>
-
-                </div>
+                <button onclick="checkBestStudent()" class="text-info">Check Best Student</button>
             </div>
-    
 
-        </div><!--jumbotron row end-->
+        </div><br>
+        
         <p id="msg" class="text-center"> </p>
     </div><!--Jumbotron end-->
     
