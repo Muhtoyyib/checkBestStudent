@@ -1,6 +1,6 @@
 var click = document.getElementById('checkBStu');
 
-click.addEventListener('click',function checkBestStudent(subject, year) {
+click.addEventListener('click',(subject, year)=> {
     subject = document.getElementById('inputSub').value.toLowerCase();
     year = document.getElementById('year').value;
     let yearR= year.trim();
