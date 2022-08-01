@@ -5,6 +5,12 @@ click.addEventListener('click',(subject, year)=> {
     year = document.getElementById('year').value;
     let yearR= year.trim();
     let result= subject.trim();
+
+    if(subject==""){
+      document.getElementById('msg').classList.remove('text-dark'); 
+      document.getElementById('msg').classList.add('text-danger');
+      document.getElementById('msg').innerHTML =`Please Input a Subject`;
+    }
  
   
 
