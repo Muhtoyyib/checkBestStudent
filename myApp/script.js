@@ -155,7 +155,7 @@ click.addEventListener('click',(subject, year)=> {
               "totalScore": 218,
               "score": 89
                        }
-          };
+          }
          
       
           examYear=lookup[result][yearR];
@@ -185,6 +185,10 @@ click.addEventListener('click',(subject, year)=> {
          document.getElementById('msg').innerHTML =`Sorry! We don't offer this subject`;
       
       }  
+    } else{
+            document.getElementById('msg').classList.remove('text-dark'); 
+            document.getElementById('msg').classList.add('text-danger');
+            document.getElementById('msg').innerHTML =`Sorry! No data is available for the ${year}`;
     }
    
     
