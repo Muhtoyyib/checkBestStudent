@@ -12,6 +12,10 @@ if(subject==""){
       document.getElementById('msg').classList.add('text-danger');
       document.getElementById('msg').innerHTML =`Please Input a Subject`;
 
+    }else{
+      document.getElementById('msg').classList.remove('text-dark'); 
+      document.getElementById('msg').classList.add('text-danger');
+      document.getElementById('msg').innerHTML =`Sorry! We don't offer this subject`;
     }
     
     
@@ -99,11 +103,7 @@ if(subject==""){
                    document.getElementById('msg').innerHTML= `The best student in <span class="text-primary text-capitalize">${result}</span> in the year <span class="text-success text-uppercase">${yearOfExam}</span>  is <span class="text-success text-uppercase">${nameOfBestStudent}</span>.<br> Total Jamb Score: <span class="text-success text-uppercase">${totalScore}</span>. <br> Score in ${result}: <span class="text-success text-uppercase">${scoreInSubject}</span>.`;
                    document.getElementById('msg').classList.add('text-dark'); 
                    break;
-                default:
-                    document.getElementById('msg').classList.remove('text-dark'); 
-                    document.getElementById('msg').classList.add('text-danger');
-                    document.getElementById('msg').innerHTML =`Sorry! We don't offer this subject`;
-      
+               
       } 
       
     } else if (year==2022){
@@ -186,10 +186,7 @@ if(subject==""){
               document.getElementById('msg').innerHTML= `The best student in <span class="text-primary text-capitalize">${result}</span> in the year <span class="text-success text-uppercase">${yearOfExam}</span>  is <span class="text-success text-uppercase">${nameOfBestStudent}</span>.<br> Total Jamb Score: <span class="text-success text-uppercase">${totalScore}</span>. <br> Score in ${result}: <span class="text-success text-uppercase">${scoreInSubject}</span> `;
               document.getElementById('msg').classList.add('text-dark'); 
               break;
-           default:
-              document.getElementById('msg').classList.remove('text-dark'); 
-              document.getElementById('msg').classList.add('text-danger');
-              document.getElementById('msg').innerHTML =`Sorry! We don't offer this subject`;
+          
       
       }  
     } else{
@@ -205,4 +202,6 @@ if(subject==""){
   
   
    );
+
+
 
