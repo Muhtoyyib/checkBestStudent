@@ -1,7 +1,7 @@
 var click = document.getElementById('checkBStu');
 
 click.addEventListener('click',(subject, year)=> {
-subject = document.getElementById('inputSub').value.toLowerCase();
+subject = document.getElementById('subject').value.toLowerCase();
 year = document.getElementById('year').value;
 let yearR= year.trim();
 let result= subject.trim();
