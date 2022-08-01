@@ -80,22 +80,22 @@ click.addEventListener('click',(subject, year)=> {
         
       
          switch(result) {
-          case "maths":
-          case "english":
-          case "chemistry":
-          case "physics":
-          case "biology":
-          case "yoruba":
-          case "statistics":
-          case "geography":
-          case "music":
-          document.getElementById('msg').innerHTML= `The best student in <span class="text-primary text-capitalize">${result}</span> in the year <span class="text-success text-uppercase">${yearOfExam}</span>  is <span class="text-success text-uppercase">${nameOfBestStudent}</span>.<br> Total Jamb Score: <span class="text-success text-uppercase">${totalScore}</span>. <br> Score in ${result}: <span class="text-success text-uppercase">${scoreInSubject}</span>.`;
-          document.getElementById('msg').classList.add('text-dark'); 
-          break;
-         default:
-          document.getElementById('msg').classList.remove('text-dark'); 
-         document.getElementById('msg').classList.add('text-danger');
-         document.getElementById('msg').innerHTML =`Sorry! We don't offer this subject`;
+                case "maths":
+                case "english":
+                case "chemistry":
+                case "physics":
+                case "biology":
+                case "yoruba":
+                case "statistics":
+                case "geography":
+                case "music":
+                   document.getElementById('msg').innerHTML= `The best student in <span class="text-primary text-capitalize">${result}</span> in the year <span class="text-success text-uppercase">${yearOfExam}</span>  is <span class="text-success text-uppercase">${nameOfBestStudent}</span>.<br> Total Jamb Score: <span class="text-success text-uppercase">${totalScore}</span>. <br> Score in ${result}: <span class="text-success text-uppercase">${scoreInSubject}</span>.`;
+                   document.getElementById('msg').classList.add('text-dark'); 
+                   break;
+                default:
+                    document.getElementById('msg').classList.remove('text-dark'); 
+                    document.getElementById('msg').classList.add('text-danger');
+                    document.getElementById('msg').innerHTML =`Sorry! We don't offer this subject`;
       
       } 
       
@@ -167,22 +167,22 @@ click.addEventListener('click',(subject, year)=> {
         
       
          switch(result) {
-          case "maths":
-          case "english":
-          case "chemistry":
-          case "physics":
-          case "biology":
-          case "yoruba":
-          case "statistics":
-          case "geography":
-          case "music":
-          document.getElementById('msg').innerHTML= `The best student in <span class="text-primary text-capitalize">${result}</span> in the year <span class="text-success text-uppercase">${yearOfExam}</span>  is <span class="text-success text-uppercase">${nameOfBestStudent}</span>.<br> Total Jamb Score: <span class="text-success text-uppercase">${totalScore}</span>. <br> Score in ${result}: <span class="text-success text-uppercase">${scoreInSubject}</span> `;
-          document.getElementById('msg').classList.add('text-dark'); 
-          break;
-         default:
-          document.getElementById('msg').classList.remove('text-dark'); 
-         document.getElementById('msg').classList.add('text-danger');
-         document.getElementById('msg').innerHTML =`Sorry! We don't offer this subject`;
+           case "maths":
+           case "english":
+           case "chemistry":
+           case "physics":
+           case "biology":
+           case "yoruba":
+           case "statistics":
+           case "geography":
+           case "music":
+              document.getElementById('msg').innerHTML= `The best student in <span class="text-primary text-capitalize">${result}</span> in the year <span class="text-success text-uppercase">${yearOfExam}</span>  is <span class="text-success text-uppercase">${nameOfBestStudent}</span>.<br> Total Jamb Score: <span class="text-success text-uppercase">${totalScore}</span>. <br> Score in ${result}: <span class="text-success text-uppercase">${scoreInSubject}</span> `;
+              document.getElementById('msg').classList.add('text-dark'); 
+              break;
+           default:
+              document.getElementById('msg').classList.remove('text-dark'); 
+              document.getElementById('msg').classList.add('text-danger');
+              document.getElementById('msg').innerHTML =`Sorry! We don't offer this subject`;
       
       }  
     } else{
