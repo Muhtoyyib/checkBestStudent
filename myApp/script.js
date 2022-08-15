@@ -24,62 +24,63 @@ if(subject==""){
         var bestStudent = "";
         var examYear="";
 
-        var lookup = {
-            "maths": {
-                "name": "Adams Milner",
-                "year": 2021,
-                "totalScore": 218,
-                "score": 79
-                         },
-            "english": {
-              "name": "Bolaji Kehinde",
-              "year": 2021,
-              "totalScore": 217,
-              "score": 80
-                       },
-            "chemistry": {
-              "name": "Timileyin Adeleke",
-              "year": 2021,
-              "totalScore": 267,
-              "score": 89
-                       },
-            "physics": {
-              "name": "Adesare Olagbagi",
-              "year": 2021,
-              "totalScore": 259,
-              "score": 78
-                       },
-            "biology":{
-              "name": "Isiaq Tijani Adekunle",
-              "year": 2021,
-              "totalScore": 267,
-              "score": 78
-                       },
-            "yoruba": {
-              "name": "Onaolapo Usman",
-              "year": 2021,
-              "totalScore": 218,
-              "score": 86
-                       },
-            "geography": {
-              "name": "Ajisafe Toheeb",
-              "year": 2021,
-              "totalScore": 240,
-              "score": 76
-                       },
-            "statistics": {
-              "name": "Ajagbe Adeleke",
-              "year": 2021,
-              "totalScore": 242,
-              "score": 79
-                       },
-            "music": {
-              "name": "Khalid Isiaq",
-              "year": 2021,
-              "totalScore": 218,
-              "score": 87
-                       }
-          };
+var lookup = {
+          maths: {
+            name: "Adigun Bello",
+            year: 2022,
+            totalScore: 276,
+            score: 80,
+          },
+
+          english: {
+            name: "Bolaji Kehinde",
+            year: 2021,
+            totalScore: 217,
+            score: 80,
+          },
+          chemistry: {
+            name: "Timileyin Adeleke",
+            year: 2021,
+            totalScore: 267,
+            score: 89,
+          },
+          physics: {
+            name: "Adesare Olagbagi",
+            year: 2021,
+            totalScore: 259,
+            score: 78,
+          },
+          biology: {
+            name: "Isiaq Tijani Adekunle",
+            year: 2021,
+            totalScore: 267,
+            score: 78,
+          },
+          yoruba: {
+            name: "Onaolapo Usman",
+            year: 2021,
+            totalScore: 218,
+            score: 86,
+          },
+          geography: {
+            name: "Ajisafe Toheeb",
+            year: 2021,
+            totalScore: 240,
+            score: 76,
+          },
+          statistics: {
+            name: "Ajagbe Adeleke",
+            year: 2021,
+            totalScore: 242,
+            score: 79,
+          },
+          music: {
+            name: "Khalid Isiaq",
+            year: 2021,
+            totalScore: 218,
+            score: 87,
+          },
+        };
          
       
           examYear=lookup[result][yearR];
@@ -199,4 +200,4 @@ if(subject==""){
   });
 
 
-
+ 
