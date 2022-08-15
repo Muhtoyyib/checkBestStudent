@@ -18,68 +18,31 @@ if(subject==""){
       document.getElementById('msg').innerHTML =`Sorry! We don't offer this subject`;
     }
     
+   
     
     if(year==2021){
 
         var bestStudent = "";
         var examYear="";
 
-var lookup = {
-          maths: {
-            name: "Adigun Bello",
-            year: 2022,
-            totalScore: 276,
-            score: 80,
-          },
+        function BestStu(name, totalScore, score){
+          this.name=name;
+          this.totalScore=totalScore;
+          this.score=score;
+        }
+    
+        BestStu.prototype.year=2021;
 
-          english: {
-            name: "Bolaji Kehinde",
-            year: 2021,
-            totalScore: 217,
-            score: 80,
-          },
-          chemistry: {
-            name: "Timileyin Adeleke",
-            year: 2021,
-            totalScore: 267,
-            score: 89,
-          },
-          physics: {
-            name: "Adesare Olagbagi",
-            year: 2021,
-            totalScore: 259,
-            score: 78,
-          },
-          biology: {
-            name: "Isiaq Tijani Adekunle",
-            year: 2021,
-            totalScore: 267,
-            score: 78,
-          },
-          yoruba: {
-            name: "Onaolapo Usman",
-            year: 2021,
-            totalScore: 218,
-            score: 86,
-          },
-          geography: {
-            name: "Ajisafe Toheeb",
-            year: 2021,
-            totalScore: 240,
-            score: 76,
-          },
-          statistics: {
-            name: "Ajagbe Adeleke",
-            year: 2021,
-            totalScore: 242,
-            score: 79,
-          },
-          music: {
-            name: "Khalid Isiaq",
-            year: 2021,
-            totalScore: 218,
-            score: 87,
-          },
+var lookup = {
+          maths: new BestStu('Adeshin Olaitan', 218, 80),
+          english: new BestStu('Bolaji Kehinde', 217,80),
+          chemistry: new BestStu('Timileyin Adeleke', 267, 89),
+          physics: new BestStu('Adesare Olagbagi', 259, 79),
+          biology: new BestStu('Isiaq Tijani Adekunle', 267, 78),
+          yoruba: new BestStu('Onaolapo Usman', 257, 86),
+          geography: new BestStu('Ajisafe Toheeb', 240, 76),
+          statistics: new BestStu('Ajagbe Adeleke', 242, 79),
+          music: new BestStu('Khalid Isiaq', 218, 87),
         };
          
       
@@ -108,61 +71,26 @@ var lookup = {
       } 
       
     } else if (year==2022){
+
+      function BestStu(name, totalScore, score){
+        this.name=name;
+        this.totalScore=totalScore;
+        this.score=score;
+      }
+  
+      BestStu.prototype.year=2022;
+
         var lookup = {
-            "maths": {
-                "name": "Adigun Bello",
-                "year": 2022,
-                "totalScore": 276,
-                "score": 80
-                         },
-            "english": {
-              "name": "Bolaji Quadri",
-              "year": 2022,
-              "totalScore": 228,
-              "score": 83
-                       },
-            "chemistry": {
-              "name": "Adeleke Olaoluwa",
-              "year": 2022,
-              "totalScore": 222,
-              "score": 76
-                       },
-            "physics": {
-              "name": "Adesare Kehinde",
-              "year": 2022,
-              "totalScore": 279,
-              "score": 79
-                       },
-            "biology":{
-              "name": "Idiagbon Adigun",
-              "year": 2022,
-              "totalScore": 276,
-              "score": 89
-                       },
-            "yoruba": {
-              "name": "Onaolapo Usman",
-              "year": 2022,
-              "totalScore": 232,
-              "score": 90
-                       },
-            "geography": {
-              "name": "Ajisafe Toheeb",
-              "year": 2022,
-              "totalScore": 265,
-              "score": 69
-                       },
-            "statistics": {
-              "name": "Ajagbe Ajagungbade",
-              "year": 2022,
-              "totalScore": 234,
-              "score": 78
-                       },
-            "music": {
-              "name": "Khalid Ajadi",
-              "year": 2022,
-              "totalScore": 218,
-              "score": 89
-                       }
+
+          maths: new BestStu('Adigun Bello', 276, 80),
+          english: new BestStu('Bolaji Quadri', 227,83),
+          chemistry: new BestStu('Adeleke Olaoluwa', 222, 76),
+          physics: new BestStu('AAdesare Kehinde', 279, 79),
+          biology: new BestStu('Idiagbon Adigun', 276, 89),
+          yoruba: new BestStu('Onaolapo Usman', 232, 86),
+          geography: new BestStu('Ajisafe Ridwan', 265, 69),
+          statistics: new BestStu('Ajagbe Ajagungbade', 234, 78),
+          music: new BestStu('Khalid Ajadi', 218, 89),
           }
          
       
