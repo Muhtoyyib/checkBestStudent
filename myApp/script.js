@@ -1,4 +1,4 @@
-var click = document.getElementById('checkBStu');
+let click = document.getElementById('checkBStu');
 
 click.addEventListener('click',(subject, year)=> {
 subject = document.getElementById('subject').value.toLowerCase();
@@ -18,19 +18,19 @@ if(subject==""){
       document.getElementById('msg').innerHTML =`Sorry! We don't offer this subject`;
     }
     
+    function BestStu(name, totalScore, score){
+      this.name=name;
+      this.totalScore=totalScore;
+      this.score=score;
+    }
+
    
     
     if(year==2021){
 
-        var bestStudent = "";
-        var examYear="";
+        let bestStudent = "";
+        let examYear="";
 
-        function BestStu(name, totalScore, score){
-          this.name=name;
-          this.totalScore=totalScore;
-          this.score=score;
-        }
-    
         BestStu.prototype.year=2021;
 
 var lookup = {
@@ -72,12 +72,7 @@ var lookup = {
       
     } else if (year==2022){
 
-      function BestStu(name, totalScore, score){
-        this.name=name;
-        this.totalScore=totalScore;
-        this.score=score;
-      }
-  
+      
       BestStu.prototype.year=2022;
 
         var lookup = {
