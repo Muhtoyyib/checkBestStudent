@@ -24,6 +24,8 @@ if(subject==""){
       this.score=score;
     }
 
+    BestStu.constructor = BestStu;
+
    
     
     if(year==2021){
